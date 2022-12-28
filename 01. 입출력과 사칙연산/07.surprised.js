@@ -1,16 +1,11 @@
 const fs = require("fs");
-const input = fs
-  .readFileSync("/dev/stdin")
-  .toString()
-  .trim()
-  .split(" ")
-  .map(Number);
+const input = fs.readFileSync("/dev/stdin").toString().trim().split(" ");
 
 const a = input[0];
 
-function yearConversion(year) {
-  const result = year - 543;
+function surprised(id) {
+  const result = id + "??!";
   return result;
 }
 
-console.log(yearConversion(a));
+console.log(surprised(a));
